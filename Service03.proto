@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package myapp;
+
+service IncidentResponse {
+  // Block Access (unary)
+  rpc BlockAccess (BlockAccessMessage) returns (BlockAccessResponseMessage) {}
+
+  // Suggest Incident Response (bidirectional streaming)
+  rpc SuggestIncidentResponse (stream SuggestIncidentRequest) returns (stream SuggestIncidentResponse) {}
+}
+
+message BlockAccessMessage {
+  string user_id = 1;
+  bool secure_flag = 2;
+}
+
+message BlockAccessResponseMessage {
+  string result = 1;
+}
+
+message SuggestIncidentRequest {
+  string access_fail_condition_trips = 1;
+}
+
+message SuggestIncidentResponse {
+  string key_id = 1;
+  string response = 2;
+}
