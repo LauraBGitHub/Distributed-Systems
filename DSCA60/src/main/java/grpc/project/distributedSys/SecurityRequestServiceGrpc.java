@@ -27,30 +27,30 @@ public final class SecurityRequestServiceGrpc {
   public static final String SERVICE_NAME = "SecurityRequestService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.Service01Impl.RequestRFIDMsg,
-      grpc.project.distributedSys.Service01Impl.ResponseAccess> getRequestRFIDMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestRFIDMsg,
+      grpc.project.distributedSys.ResponseAccess> getRequestRFIDMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "RequestRFID",
-      requestType = grpc.project.distributedSys.Service01Impl.RequestRFIDMsg.class,
-      responseType = grpc.project.distributedSys.Service01Impl.ResponseAccess.class,
+      requestType = grpc.project.distributedSys.RequestRFIDMsg.class,
+      responseType = grpc.project.distributedSys.ResponseAccess.class,
       methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.Service01Impl.RequestRFIDMsg,
-      grpc.project.distributedSys.Service01Impl.ResponseAccess> getRequestRFIDMethod() {
-    io.grpc.MethodDescriptor<grpc.project.distributedSys.Service01Impl.RequestRFIDMsg, grpc.project.distributedSys.Service01Impl.ResponseAccess> getRequestRFIDMethod;
+  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestRFIDMsg,
+      grpc.project.distributedSys.ResponseAccess> getRequestRFIDMethod() {
+    io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestRFIDMsg, grpc.project.distributedSys.ResponseAccess> getRequestRFIDMethod;
     if ((getRequestRFIDMethod = SecurityRequestServiceGrpc.getRequestRFIDMethod) == null) {
       synchronized (SecurityRequestServiceGrpc.class) {
         if ((getRequestRFIDMethod = SecurityRequestServiceGrpc.getRequestRFIDMethod) == null) {
           SecurityRequestServiceGrpc.getRequestRFIDMethod = getRequestRFIDMethod = 
-              io.grpc.MethodDescriptor.<grpc.project.distributedSys.Service01Impl.RequestRFIDMsg, grpc.project.distributedSys.Service01Impl.ResponseAccess>newBuilder()
+              io.grpc.MethodDescriptor.<grpc.project.distributedSys.RequestRFIDMsg, grpc.project.distributedSys.ResponseAccess>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
               .setFullMethodName(generateFullMethodName(
                   "SecurityRequestService", "RequestRFID"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service01Impl.RequestRFIDMsg.getDefaultInstance()))
+                  grpc.project.distributedSys.RequestRFIDMsg.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service01Impl.ResponseAccess.getDefaultInstance()))
+                  grpc.project.distributedSys.ResponseAccess.getDefaultInstance()))
                   .setSchemaDescriptor(new SecurityRequestServiceMethodDescriptorSupplier("RequestRFID"))
                   .build();
           }
@@ -59,30 +59,30 @@ public final class SecurityRequestServiceGrpc {
      return getRequestRFIDMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.Service01Impl.RequestDoorAccessMsg,
-      grpc.project.distributedSys.Service01Impl.ResponseAccess> getRequestDoorAccessMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestDoorAccessMsg,
+      grpc.project.distributedSys.ResponseAccess> getRequestDoorAccessMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "RequestDoorAccess",
-      requestType = grpc.project.distributedSys.Service01Impl.RequestDoorAccessMsg.class,
-      responseType = grpc.project.distributedSys.Service01Impl.ResponseAccess.class,
+      requestType = grpc.project.distributedSys.RequestDoorAccessMsg.class,
+      responseType = grpc.project.distributedSys.ResponseAccess.class,
       methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.Service01Impl.RequestDoorAccessMsg,
-      grpc.project.distributedSys.Service01Impl.ResponseAccess> getRequestDoorAccessMethod() {
-    io.grpc.MethodDescriptor<grpc.project.distributedSys.Service01Impl.RequestDoorAccessMsg, grpc.project.distributedSys.Service01Impl.ResponseAccess> getRequestDoorAccessMethod;
+  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestDoorAccessMsg,
+      grpc.project.distributedSys.ResponseAccess> getRequestDoorAccessMethod() {
+    io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestDoorAccessMsg, grpc.project.distributedSys.ResponseAccess> getRequestDoorAccessMethod;
     if ((getRequestDoorAccessMethod = SecurityRequestServiceGrpc.getRequestDoorAccessMethod) == null) {
       synchronized (SecurityRequestServiceGrpc.class) {
         if ((getRequestDoorAccessMethod = SecurityRequestServiceGrpc.getRequestDoorAccessMethod) == null) {
           SecurityRequestServiceGrpc.getRequestDoorAccessMethod = getRequestDoorAccessMethod = 
-              io.grpc.MethodDescriptor.<grpc.project.distributedSys.Service01Impl.RequestDoorAccessMsg, grpc.project.distributedSys.Service01Impl.ResponseAccess>newBuilder()
+              io.grpc.MethodDescriptor.<grpc.project.distributedSys.RequestDoorAccessMsg, grpc.project.distributedSys.ResponseAccess>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
               .setFullMethodName(generateFullMethodName(
                   "SecurityRequestService", "RequestDoorAccess"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service01Impl.RequestDoorAccessMsg.getDefaultInstance()))
+                  grpc.project.distributedSys.RequestDoorAccessMsg.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service01Impl.ResponseAccess.getDefaultInstance()))
+                  grpc.project.distributedSys.ResponseAccess.getDefaultInstance()))
                   .setSchemaDescriptor(new SecurityRequestServiceMethodDescriptorSupplier("RequestDoorAccess"))
                   .build();
           }
@@ -91,30 +91,30 @@ public final class SecurityRequestServiceGrpc {
      return getRequestDoorAccessMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.Service01Impl.RequestSecProfile,
-      grpc.project.distributedSys.Service01Impl.SecurityProfile> getRequestSecurityProfileMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestSecProfile,
+      grpc.project.distributedSys.SecurityProfile> getRequestSecurityProfileMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "RequestSecurityProfile",
-      requestType = grpc.project.distributedSys.Service01Impl.RequestSecProfile.class,
-      responseType = grpc.project.distributedSys.Service01Impl.SecurityProfile.class,
+      requestType = grpc.project.distributedSys.RequestSecProfile.class,
+      responseType = grpc.project.distributedSys.SecurityProfile.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.Service01Impl.RequestSecProfile,
-      grpc.project.distributedSys.Service01Impl.SecurityProfile> getRequestSecurityProfileMethod() {
-    io.grpc.MethodDescriptor<grpc.project.distributedSys.Service01Impl.RequestSecProfile, grpc.project.distributedSys.Service01Impl.SecurityProfile> getRequestSecurityProfileMethod;
+  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestSecProfile,
+      grpc.project.distributedSys.SecurityProfile> getRequestSecurityProfileMethod() {
+    io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestSecProfile, grpc.project.distributedSys.SecurityProfile> getRequestSecurityProfileMethod;
     if ((getRequestSecurityProfileMethod = SecurityRequestServiceGrpc.getRequestSecurityProfileMethod) == null) {
       synchronized (SecurityRequestServiceGrpc.class) {
         if ((getRequestSecurityProfileMethod = SecurityRequestServiceGrpc.getRequestSecurityProfileMethod) == null) {
           SecurityRequestServiceGrpc.getRequestSecurityProfileMethod = getRequestSecurityProfileMethod = 
-              io.grpc.MethodDescriptor.<grpc.project.distributedSys.Service01Impl.RequestSecProfile, grpc.project.distributedSys.Service01Impl.SecurityProfile>newBuilder()
+              io.grpc.MethodDescriptor.<grpc.project.distributedSys.RequestSecProfile, grpc.project.distributedSys.SecurityProfile>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "SecurityRequestService", "RequestSecurityProfile"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service01Impl.RequestSecProfile.getDefaultInstance()))
+                  grpc.project.distributedSys.RequestSecProfile.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service01Impl.SecurityProfile.getDefaultInstance()))
+                  grpc.project.distributedSys.SecurityProfile.getDefaultInstance()))
                   .setSchemaDescriptor(new SecurityRequestServiceMethodDescriptorSupplier("RequestSecurityProfile"))
                   .build();
           }
@@ -155,8 +155,8 @@ public final class SecurityRequestServiceGrpc {
      * Method 1: RFID Request with Unary Streaming
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.RequestRFIDMsg> requestRFID(
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.ResponseAccess> responseObserver) {
+    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.RequestRFIDMsg> requestRFID(
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.ResponseAccess> responseObserver) {
       return asyncUnimplementedStreamingCall(getRequestRFIDMethod(), responseObserver);
     }
 
@@ -165,8 +165,8 @@ public final class SecurityRequestServiceGrpc {
      * Method 2: PIN Request with Client-side Streaming
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.RequestDoorAccessMsg> requestDoorAccess(
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.ResponseAccess> responseObserver) {
+    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.RequestDoorAccessMsg> requestDoorAccess(
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.ResponseAccess> responseObserver) {
       return asyncUnimplementedStreamingCall(getRequestDoorAccessMethod(), responseObserver);
     }
 
@@ -175,8 +175,8 @@ public final class SecurityRequestServiceGrpc {
      * Method 3: Request Security Profile with Unary Streaming
      * </pre>
      */
-    public void requestSecurityProfile(grpc.project.distributedSys.Service01Impl.RequestSecProfile request,
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.SecurityProfile> responseObserver) {
+    public void requestSecurityProfile(grpc.project.distributedSys.RequestSecProfile request,
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.SecurityProfile> responseObserver) {
       asyncUnimplementedUnaryCall(getRequestSecurityProfileMethod(), responseObserver);
     }
 
@@ -186,22 +186,22 @@ public final class SecurityRequestServiceGrpc {
             getRequestRFIDMethod(),
             asyncClientStreamingCall(
               new MethodHandlers<
-                grpc.project.distributedSys.Service01Impl.RequestRFIDMsg,
-                grpc.project.distributedSys.Service01Impl.ResponseAccess>(
+                grpc.project.distributedSys.RequestRFIDMsg,
+                grpc.project.distributedSys.ResponseAccess>(
                   this, METHODID_REQUEST_RFID)))
           .addMethod(
             getRequestDoorAccessMethod(),
             asyncClientStreamingCall(
               new MethodHandlers<
-                grpc.project.distributedSys.Service01Impl.RequestDoorAccessMsg,
-                grpc.project.distributedSys.Service01Impl.ResponseAccess>(
+                grpc.project.distributedSys.RequestDoorAccessMsg,
+                grpc.project.distributedSys.ResponseAccess>(
                   this, METHODID_REQUEST_DOOR_ACCESS)))
           .addMethod(
             getRequestSecurityProfileMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                grpc.project.distributedSys.Service01Impl.RequestSecProfile,
-                grpc.project.distributedSys.Service01Impl.SecurityProfile>(
+                grpc.project.distributedSys.RequestSecProfile,
+                grpc.project.distributedSys.SecurityProfile>(
                   this, METHODID_REQUEST_SECURITY_PROFILE)))
           .build();
     }
@@ -230,8 +230,8 @@ public final class SecurityRequestServiceGrpc {
      * Method 1: RFID Request with Unary Streaming
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.RequestRFIDMsg> requestRFID(
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.ResponseAccess> responseObserver) {
+    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.RequestRFIDMsg> requestRFID(
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.ResponseAccess> responseObserver) {
       return asyncClientStreamingCall(
           getChannel().newCall(getRequestRFIDMethod(), getCallOptions()), responseObserver);
     }
@@ -241,8 +241,8 @@ public final class SecurityRequestServiceGrpc {
      * Method 2: PIN Request with Client-side Streaming
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.RequestDoorAccessMsg> requestDoorAccess(
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.ResponseAccess> responseObserver) {
+    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.RequestDoorAccessMsg> requestDoorAccess(
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.ResponseAccess> responseObserver) {
       return asyncClientStreamingCall(
           getChannel().newCall(getRequestDoorAccessMethod(), getCallOptions()), responseObserver);
     }
@@ -252,8 +252,8 @@ public final class SecurityRequestServiceGrpc {
      * Method 3: Request Security Profile with Unary Streaming
      * </pre>
      */
-    public void requestSecurityProfile(grpc.project.distributedSys.Service01Impl.RequestSecProfile request,
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.SecurityProfile> responseObserver) {
+    public void requestSecurityProfile(grpc.project.distributedSys.RequestSecProfile request,
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.SecurityProfile> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getRequestSecurityProfileMethod(), getCallOptions()), request, responseObserver);
     }
@@ -282,7 +282,7 @@ public final class SecurityRequestServiceGrpc {
      * Method 3: Request Security Profile with Unary Streaming
      * </pre>
      */
-    public grpc.project.distributedSys.Service01Impl.SecurityProfile requestSecurityProfile(grpc.project.distributedSys.Service01Impl.RequestSecProfile request) {
+    public grpc.project.distributedSys.SecurityProfile requestSecurityProfile(grpc.project.distributedSys.RequestSecProfile request) {
       return blockingUnaryCall(
           getChannel(), getRequestSecurityProfileMethod(), getCallOptions(), request);
     }
@@ -311,8 +311,8 @@ public final class SecurityRequestServiceGrpc {
      * Method 3: Request Security Profile with Unary Streaming
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpc.project.distributedSys.Service01Impl.SecurityProfile> requestSecurityProfile(
-        grpc.project.distributedSys.Service01Impl.RequestSecProfile request) {
+    public com.google.common.util.concurrent.ListenableFuture<grpc.project.distributedSys.SecurityProfile> requestSecurityProfile(
+        grpc.project.distributedSys.RequestSecProfile request) {
       return futureUnaryCall(
           getChannel().newCall(getRequestSecurityProfileMethod(), getCallOptions()), request);
     }
@@ -340,8 +340,8 @@ public final class SecurityRequestServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_REQUEST_SECURITY_PROFILE:
-          serviceImpl.requestSecurityProfile((grpc.project.distributedSys.Service01Impl.RequestSecProfile) request,
-              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.SecurityProfile>) responseObserver);
+          serviceImpl.requestSecurityProfile((grpc.project.distributedSys.RequestSecProfile) request,
+              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.SecurityProfile>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -355,10 +355,10 @@ public final class SecurityRequestServiceGrpc {
       switch (methodId) {
         case METHODID_REQUEST_RFID:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.requestRFID(
-              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.ResponseAccess>) responseObserver);
+              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.ResponseAccess>) responseObserver);
         case METHODID_REQUEST_DOOR_ACCESS:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.requestDoorAccess(
-              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service01Impl.ResponseAccess>) responseObserver);
+              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.ResponseAccess>) responseObserver);
         default:
           throw new AssertionError();
       }

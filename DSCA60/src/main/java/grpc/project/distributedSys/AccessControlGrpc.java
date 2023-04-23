@@ -27,30 +27,30 @@ public final class AccessControlGrpc {
   public static final String SERVICE_NAME = "AccessControl";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.Service02Impl.SetSecurityProfileRequest,
-      grpc.project.distributedSys.Service02Impl.SetSecurityProfileResponse> getSetSecurityProfileMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.SetSecurityProfileRequest,
+      grpc.project.distributedSys.SetSecurityProfileResponse> getSetSecurityProfileMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SetSecurityProfile",
-      requestType = grpc.project.distributedSys.Service02Impl.SetSecurityProfileRequest.class,
-      responseType = grpc.project.distributedSys.Service02Impl.SetSecurityProfileResponse.class,
+      requestType = grpc.project.distributedSys.SetSecurityProfileRequest.class,
+      responseType = grpc.project.distributedSys.SetSecurityProfileResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.Service02Impl.SetSecurityProfileRequest,
-      grpc.project.distributedSys.Service02Impl.SetSecurityProfileResponse> getSetSecurityProfileMethod() {
-    io.grpc.MethodDescriptor<grpc.project.distributedSys.Service02Impl.SetSecurityProfileRequest, grpc.project.distributedSys.Service02Impl.SetSecurityProfileResponse> getSetSecurityProfileMethod;
+  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.SetSecurityProfileRequest,
+      grpc.project.distributedSys.SetSecurityProfileResponse> getSetSecurityProfileMethod() {
+    io.grpc.MethodDescriptor<grpc.project.distributedSys.SetSecurityProfileRequest, grpc.project.distributedSys.SetSecurityProfileResponse> getSetSecurityProfileMethod;
     if ((getSetSecurityProfileMethod = AccessControlGrpc.getSetSecurityProfileMethod) == null) {
       synchronized (AccessControlGrpc.class) {
         if ((getSetSecurityProfileMethod = AccessControlGrpc.getSetSecurityProfileMethod) == null) {
           AccessControlGrpc.getSetSecurityProfileMethod = getSetSecurityProfileMethod = 
-              io.grpc.MethodDescriptor.<grpc.project.distributedSys.Service02Impl.SetSecurityProfileRequest, grpc.project.distributedSys.Service02Impl.SetSecurityProfileResponse>newBuilder()
+              io.grpc.MethodDescriptor.<grpc.project.distributedSys.SetSecurityProfileRequest, grpc.project.distributedSys.SetSecurityProfileResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(
                   "AccessControl", "SetSecurityProfile"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service02Impl.SetSecurityProfileRequest.getDefaultInstance()))
+                  grpc.project.distributedSys.SetSecurityProfileRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service02Impl.SetSecurityProfileResponse.getDefaultInstance()))
+                  grpc.project.distributedSys.SetSecurityProfileResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new AccessControlMethodDescriptorSupplier("SetSecurityProfile"))
                   .build();
           }
@@ -59,30 +59,30 @@ public final class AccessControlGrpc {
      return getSetSecurityProfileMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg,
-      grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse> getVerifyPreApprovalMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.VerifyPreApprovalMsg,
+      grpc.project.distributedSys.VerifyPreApprovalResponse> getVerifyPreApprovalMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "VerifyPreApproval",
-      requestType = grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg.class,
-      responseType = grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse.class,
+      requestType = grpc.project.distributedSys.VerifyPreApprovalMsg.class,
+      responseType = grpc.project.distributedSys.VerifyPreApprovalResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg,
-      grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse> getVerifyPreApprovalMethod() {
-    io.grpc.MethodDescriptor<grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg, grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse> getVerifyPreApprovalMethod;
+  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.VerifyPreApprovalMsg,
+      grpc.project.distributedSys.VerifyPreApprovalResponse> getVerifyPreApprovalMethod() {
+    io.grpc.MethodDescriptor<grpc.project.distributedSys.VerifyPreApprovalMsg, grpc.project.distributedSys.VerifyPreApprovalResponse> getVerifyPreApprovalMethod;
     if ((getVerifyPreApprovalMethod = AccessControlGrpc.getVerifyPreApprovalMethod) == null) {
       synchronized (AccessControlGrpc.class) {
         if ((getVerifyPreApprovalMethod = AccessControlGrpc.getVerifyPreApprovalMethod) == null) {
           AccessControlGrpc.getVerifyPreApprovalMethod = getVerifyPreApprovalMethod = 
-              io.grpc.MethodDescriptor.<grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg, grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse>newBuilder()
+              io.grpc.MethodDescriptor.<grpc.project.distributedSys.VerifyPreApprovalMsg, grpc.project.distributedSys.VerifyPreApprovalResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "AccessControl", "VerifyPreApproval"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg.getDefaultInstance()))
+                  grpc.project.distributedSys.VerifyPreApprovalMsg.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse.getDefaultInstance()))
+                  grpc.project.distributedSys.VerifyPreApprovalResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new AccessControlMethodDescriptorSupplier("VerifyPreApproval"))
                   .build();
           }
@@ -91,30 +91,30 @@ public final class AccessControlGrpc {
      return getVerifyPreApprovalMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg,
-      grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse> getRequestTwoFAMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestTwoFAMsg,
+      grpc.project.distributedSys.RequestTwoFAResponse> getRequestTwoFAMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "RequestTwoFA",
-      requestType = grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg.class,
-      responseType = grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse.class,
+      requestType = grpc.project.distributedSys.RequestTwoFAMsg.class,
+      responseType = grpc.project.distributedSys.RequestTwoFAResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg,
-      grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse> getRequestTwoFAMethod() {
-    io.grpc.MethodDescriptor<grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg, grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse> getRequestTwoFAMethod;
+  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestTwoFAMsg,
+      grpc.project.distributedSys.RequestTwoFAResponse> getRequestTwoFAMethod() {
+    io.grpc.MethodDescriptor<grpc.project.distributedSys.RequestTwoFAMsg, grpc.project.distributedSys.RequestTwoFAResponse> getRequestTwoFAMethod;
     if ((getRequestTwoFAMethod = AccessControlGrpc.getRequestTwoFAMethod) == null) {
       synchronized (AccessControlGrpc.class) {
         if ((getRequestTwoFAMethod = AccessControlGrpc.getRequestTwoFAMethod) == null) {
           AccessControlGrpc.getRequestTwoFAMethod = getRequestTwoFAMethod = 
-              io.grpc.MethodDescriptor.<grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg, grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse>newBuilder()
+              io.grpc.MethodDescriptor.<grpc.project.distributedSys.RequestTwoFAMsg, grpc.project.distributedSys.RequestTwoFAResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "AccessControl", "RequestTwoFA"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg.getDefaultInstance()))
+                  grpc.project.distributedSys.RequestTwoFAMsg.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse.getDefaultInstance()))
+                  grpc.project.distributedSys.RequestTwoFAResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new AccessControlMethodDescriptorSupplier("RequestTwoFA"))
                   .build();
           }
@@ -155,8 +155,8 @@ public final class AccessControlGrpc {
      * SET Security Profile (server streaming)
      * </pre>
      */
-    public void setSecurityProfile(grpc.project.distributedSys.Service02Impl.SetSecurityProfileRequest request,
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service02Impl.SetSecurityProfileResponse> responseObserver) {
+    public void setSecurityProfile(grpc.project.distributedSys.SetSecurityProfileRequest request,
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.SetSecurityProfileResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getSetSecurityProfileMethod(), responseObserver);
     }
 
@@ -165,8 +165,8 @@ public final class AccessControlGrpc {
      * Verify PreApproval (unary)
      * </pre>
      */
-    public void verifyPreApproval(grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg request,
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse> responseObserver) {
+    public void verifyPreApproval(grpc.project.distributedSys.VerifyPreApprovalMsg request,
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.VerifyPreApprovalResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getVerifyPreApprovalMethod(), responseObserver);
     }
 
@@ -175,8 +175,8 @@ public final class AccessControlGrpc {
      * Request 2FA (unary)
      * </pre>
      */
-    public void requestTwoFA(grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg request,
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse> responseObserver) {
+    public void requestTwoFA(grpc.project.distributedSys.RequestTwoFAMsg request,
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.RequestTwoFAResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getRequestTwoFAMethod(), responseObserver);
     }
 
@@ -186,22 +186,22 @@ public final class AccessControlGrpc {
             getSetSecurityProfileMethod(),
             asyncServerStreamingCall(
               new MethodHandlers<
-                grpc.project.distributedSys.Service02Impl.SetSecurityProfileRequest,
-                grpc.project.distributedSys.Service02Impl.SetSecurityProfileResponse>(
+                grpc.project.distributedSys.SetSecurityProfileRequest,
+                grpc.project.distributedSys.SetSecurityProfileResponse>(
                   this, METHODID_SET_SECURITY_PROFILE)))
           .addMethod(
             getVerifyPreApprovalMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg,
-                grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse>(
+                grpc.project.distributedSys.VerifyPreApprovalMsg,
+                grpc.project.distributedSys.VerifyPreApprovalResponse>(
                   this, METHODID_VERIFY_PRE_APPROVAL)))
           .addMethod(
             getRequestTwoFAMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg,
-                grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse>(
+                grpc.project.distributedSys.RequestTwoFAMsg,
+                grpc.project.distributedSys.RequestTwoFAResponse>(
                   this, METHODID_REQUEST_TWO_FA)))
           .build();
     }
@@ -230,8 +230,8 @@ public final class AccessControlGrpc {
      * SET Security Profile (server streaming)
      * </pre>
      */
-    public void setSecurityProfile(grpc.project.distributedSys.Service02Impl.SetSecurityProfileRequest request,
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service02Impl.SetSecurityProfileResponse> responseObserver) {
+    public void setSecurityProfile(grpc.project.distributedSys.SetSecurityProfileRequest request,
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.SetSecurityProfileResponse> responseObserver) {
       asyncServerStreamingCall(
           getChannel().newCall(getSetSecurityProfileMethod(), getCallOptions()), request, responseObserver);
     }
@@ -241,8 +241,8 @@ public final class AccessControlGrpc {
      * Verify PreApproval (unary)
      * </pre>
      */
-    public void verifyPreApproval(grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg request,
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse> responseObserver) {
+    public void verifyPreApproval(grpc.project.distributedSys.VerifyPreApprovalMsg request,
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.VerifyPreApprovalResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getVerifyPreApprovalMethod(), getCallOptions()), request, responseObserver);
     }
@@ -252,8 +252,8 @@ public final class AccessControlGrpc {
      * Request 2FA (unary)
      * </pre>
      */
-    public void requestTwoFA(grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg request,
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse> responseObserver) {
+    public void requestTwoFA(grpc.project.distributedSys.RequestTwoFAMsg request,
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.RequestTwoFAResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getRequestTwoFAMethod(), getCallOptions()), request, responseObserver);
     }
@@ -282,8 +282,8 @@ public final class AccessControlGrpc {
      * SET Security Profile (server streaming)
      * </pre>
      */
-    public java.util.Iterator<grpc.project.distributedSys.Service02Impl.SetSecurityProfileResponse> setSecurityProfile(
-        grpc.project.distributedSys.Service02Impl.SetSecurityProfileRequest request) {
+    public java.util.Iterator<grpc.project.distributedSys.SetSecurityProfileResponse> setSecurityProfile(
+        grpc.project.distributedSys.SetSecurityProfileRequest request) {
       return blockingServerStreamingCall(
           getChannel(), getSetSecurityProfileMethod(), getCallOptions(), request);
     }
@@ -293,7 +293,7 @@ public final class AccessControlGrpc {
      * Verify PreApproval (unary)
      * </pre>
      */
-    public grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse verifyPreApproval(grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg request) {
+    public grpc.project.distributedSys.VerifyPreApprovalResponse verifyPreApproval(grpc.project.distributedSys.VerifyPreApprovalMsg request) {
       return blockingUnaryCall(
           getChannel(), getVerifyPreApprovalMethod(), getCallOptions(), request);
     }
@@ -303,7 +303,7 @@ public final class AccessControlGrpc {
      * Request 2FA (unary)
      * </pre>
      */
-    public grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse requestTwoFA(grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg request) {
+    public grpc.project.distributedSys.RequestTwoFAResponse requestTwoFA(grpc.project.distributedSys.RequestTwoFAMsg request) {
       return blockingUnaryCall(
           getChannel(), getRequestTwoFAMethod(), getCallOptions(), request);
     }
@@ -332,8 +332,8 @@ public final class AccessControlGrpc {
      * Verify PreApproval (unary)
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse> verifyPreApproval(
-        grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg request) {
+    public com.google.common.util.concurrent.ListenableFuture<grpc.project.distributedSys.VerifyPreApprovalResponse> verifyPreApproval(
+        grpc.project.distributedSys.VerifyPreApprovalMsg request) {
       return futureUnaryCall(
           getChannel().newCall(getVerifyPreApprovalMethod(), getCallOptions()), request);
     }
@@ -343,8 +343,8 @@ public final class AccessControlGrpc {
      * Request 2FA (unary)
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse> requestTwoFA(
-        grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg request) {
+    public com.google.common.util.concurrent.ListenableFuture<grpc.project.distributedSys.RequestTwoFAResponse> requestTwoFA(
+        grpc.project.distributedSys.RequestTwoFAMsg request) {
       return futureUnaryCall(
           getChannel().newCall(getRequestTwoFAMethod(), getCallOptions()), request);
     }
@@ -372,16 +372,16 @@ public final class AccessControlGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SET_SECURITY_PROFILE:
-          serviceImpl.setSecurityProfile((grpc.project.distributedSys.Service02Impl.SetSecurityProfileRequest) request,
-              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service02Impl.SetSecurityProfileResponse>) responseObserver);
+          serviceImpl.setSecurityProfile((grpc.project.distributedSys.SetSecurityProfileRequest) request,
+              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.SetSecurityProfileResponse>) responseObserver);
           break;
         case METHODID_VERIFY_PRE_APPROVAL:
-          serviceImpl.verifyPreApproval((grpc.project.distributedSys.Service02Impl.VerifyPreApprovalMsg) request,
-              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service02Impl.VerifyPreApprovalResponse>) responseObserver);
+          serviceImpl.verifyPreApproval((grpc.project.distributedSys.VerifyPreApprovalMsg) request,
+              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.VerifyPreApprovalResponse>) responseObserver);
           break;
         case METHODID_REQUEST_TWO_FA:
-          serviceImpl.requestTwoFA((grpc.project.distributedSys.Service02Impl.RequestTwoFAMsg) request,
-              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service02Impl.RequestTwoFAResponse>) responseObserver);
+          serviceImpl.requestTwoFA((grpc.project.distributedSys.RequestTwoFAMsg) request,
+              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.RequestTwoFAResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();

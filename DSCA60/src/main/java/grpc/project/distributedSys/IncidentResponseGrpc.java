@@ -27,30 +27,30 @@ public final class IncidentResponseGrpc {
   public static final String SERVICE_NAME = "IncidentResponse";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.Service03Impl.BlockAccessMessage,
-      grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage> getBlockAccessMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.BlockAccessMessage,
+      grpc.project.distributedSys.BlockAccessResponseMessage> getBlockAccessMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "BlockAccess",
-      requestType = grpc.project.distributedSys.Service03Impl.BlockAccessMessage.class,
-      responseType = grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage.class,
+      requestType = grpc.project.distributedSys.BlockAccessMessage.class,
+      responseType = grpc.project.distributedSys.BlockAccessResponseMessage.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.Service03Impl.BlockAccessMessage,
-      grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage> getBlockAccessMethod() {
-    io.grpc.MethodDescriptor<grpc.project.distributedSys.Service03Impl.BlockAccessMessage, grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage> getBlockAccessMethod;
+  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.BlockAccessMessage,
+      grpc.project.distributedSys.BlockAccessResponseMessage> getBlockAccessMethod() {
+    io.grpc.MethodDescriptor<grpc.project.distributedSys.BlockAccessMessage, grpc.project.distributedSys.BlockAccessResponseMessage> getBlockAccessMethod;
     if ((getBlockAccessMethod = IncidentResponseGrpc.getBlockAccessMethod) == null) {
       synchronized (IncidentResponseGrpc.class) {
         if ((getBlockAccessMethod = IncidentResponseGrpc.getBlockAccessMethod) == null) {
           IncidentResponseGrpc.getBlockAccessMethod = getBlockAccessMethod = 
-              io.grpc.MethodDescriptor.<grpc.project.distributedSys.Service03Impl.BlockAccessMessage, grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage>newBuilder()
+              io.grpc.MethodDescriptor.<grpc.project.distributedSys.BlockAccessMessage, grpc.project.distributedSys.BlockAccessResponseMessage>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "IncidentResponse", "BlockAccess"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service03Impl.BlockAccessMessage.getDefaultInstance()))
+                  grpc.project.distributedSys.BlockAccessMessage.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage.getDefaultInstance()))
+                  grpc.project.distributedSys.BlockAccessResponseMessage.getDefaultInstance()))
                   .setSchemaDescriptor(new IncidentResponseMethodDescriptorSupplier("BlockAccess"))
                   .build();
           }
@@ -59,30 +59,30 @@ public final class IncidentResponseGrpc {
      return getBlockAccessMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.Service03Impl.SuggestIncidentRequest,
-      grpc.project.distributedSys.Service03Impl.SuggestIncidentResponseMsg> getSuggestIncidentResponseMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc.project.distributedSys.SuggestIncidentRequest,
+      grpc.project.distributedSys.SuggestIncidentResponseMsg> getSuggestIncidentResponseMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SuggestIncidentResponse",
-      requestType = grpc.project.distributedSys.Service03Impl.SuggestIncidentRequest.class,
-      responseType = grpc.project.distributedSys.Service03Impl.SuggestIncidentResponseMsg.class,
+      requestType = grpc.project.distributedSys.SuggestIncidentRequest.class,
+      responseType = grpc.project.distributedSys.SuggestIncidentResponseMsg.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.Service03Impl.SuggestIncidentRequest,
-      grpc.project.distributedSys.Service03Impl.SuggestIncidentResponseMsg> getSuggestIncidentResponseMethod() {
-    io.grpc.MethodDescriptor<grpc.project.distributedSys.Service03Impl.SuggestIncidentRequest, grpc.project.distributedSys.Service03Impl.SuggestIncidentResponseMsg> getSuggestIncidentResponseMethod;
+  public static io.grpc.MethodDescriptor<grpc.project.distributedSys.SuggestIncidentRequest,
+      grpc.project.distributedSys.SuggestIncidentResponseMsg> getSuggestIncidentResponseMethod() {
+    io.grpc.MethodDescriptor<grpc.project.distributedSys.SuggestIncidentRequest, grpc.project.distributedSys.SuggestIncidentResponseMsg> getSuggestIncidentResponseMethod;
     if ((getSuggestIncidentResponseMethod = IncidentResponseGrpc.getSuggestIncidentResponseMethod) == null) {
       synchronized (IncidentResponseGrpc.class) {
         if ((getSuggestIncidentResponseMethod = IncidentResponseGrpc.getSuggestIncidentResponseMethod) == null) {
           IncidentResponseGrpc.getSuggestIncidentResponseMethod = getSuggestIncidentResponseMethod = 
-              io.grpc.MethodDescriptor.<grpc.project.distributedSys.Service03Impl.SuggestIncidentRequest, grpc.project.distributedSys.Service03Impl.SuggestIncidentResponseMsg>newBuilder()
+              io.grpc.MethodDescriptor.<grpc.project.distributedSys.SuggestIncidentRequest, grpc.project.distributedSys.SuggestIncidentResponseMsg>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(
                   "IncidentResponse", "SuggestIncidentResponse"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service03Impl.SuggestIncidentRequest.getDefaultInstance()))
+                  grpc.project.distributedSys.SuggestIncidentRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.project.distributedSys.Service03Impl.SuggestIncidentResponseMsg.getDefaultInstance()))
+                  grpc.project.distributedSys.SuggestIncidentResponseMsg.getDefaultInstance()))
                   .setSchemaDescriptor(new IncidentResponseMethodDescriptorSupplier("SuggestIncidentResponse"))
                   .build();
           }
@@ -123,8 +123,8 @@ public final class IncidentResponseGrpc {
      * Block Access (unary)
      * </pre>
      */
-    public void blockAccess(grpc.project.distributedSys.Service03Impl.BlockAccessMessage request,
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage> responseObserver) {
+    public void blockAccess(grpc.project.distributedSys.BlockAccessMessage request,
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.BlockAccessResponseMessage> responseObserver) {
       asyncUnimplementedUnaryCall(getBlockAccessMethod(), responseObserver);
     }
 
@@ -133,8 +133,8 @@ public final class IncidentResponseGrpc {
      * Suggest Incident Response (bidirectional streaming)
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service03Impl.SuggestIncidentRequest> suggestIncidentResponse(
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service03Impl.SuggestIncidentResponseMsg> responseObserver) {
+    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.SuggestIncidentRequest> suggestIncidentResponse(
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.SuggestIncidentResponseMsg> responseObserver) {
       return asyncUnimplementedStreamingCall(getSuggestIncidentResponseMethod(), responseObserver);
     }
 
@@ -144,15 +144,15 @@ public final class IncidentResponseGrpc {
             getBlockAccessMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                grpc.project.distributedSys.Service03Impl.BlockAccessMessage,
-                grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage>(
+                grpc.project.distributedSys.BlockAccessMessage,
+                grpc.project.distributedSys.BlockAccessResponseMessage>(
                   this, METHODID_BLOCK_ACCESS)))
           .addMethod(
             getSuggestIncidentResponseMethod(),
             asyncBidiStreamingCall(
               new MethodHandlers<
-                grpc.project.distributedSys.Service03Impl.SuggestIncidentRequest,
-                grpc.project.distributedSys.Service03Impl.SuggestIncidentResponseMsg>(
+                grpc.project.distributedSys.SuggestIncidentRequest,
+                grpc.project.distributedSys.SuggestIncidentResponseMsg>(
                   this, METHODID_SUGGEST_INCIDENT_RESPONSE)))
           .build();
     }
@@ -181,8 +181,8 @@ public final class IncidentResponseGrpc {
      * Block Access (unary)
      * </pre>
      */
-    public void blockAccess(grpc.project.distributedSys.Service03Impl.BlockAccessMessage request,
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage> responseObserver) {
+    public void blockAccess(grpc.project.distributedSys.BlockAccessMessage request,
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.BlockAccessResponseMessage> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getBlockAccessMethod(), getCallOptions()), request, responseObserver);
     }
@@ -192,8 +192,8 @@ public final class IncidentResponseGrpc {
      * Suggest Incident Response (bidirectional streaming)
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service03Impl.SuggestIncidentRequest> suggestIncidentResponse(
-        io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service03Impl.SuggestIncidentResponseMsg> responseObserver) {
+    public io.grpc.stub.StreamObserver<grpc.project.distributedSys.SuggestIncidentRequest> suggestIncidentResponse(
+        io.grpc.stub.StreamObserver<grpc.project.distributedSys.SuggestIncidentResponseMsg> responseObserver) {
       return asyncBidiStreamingCall(
           getChannel().newCall(getSuggestIncidentResponseMethod(), getCallOptions()), responseObserver);
     }
@@ -222,7 +222,7 @@ public final class IncidentResponseGrpc {
      * Block Access (unary)
      * </pre>
      */
-    public grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage blockAccess(grpc.project.distributedSys.Service03Impl.BlockAccessMessage request) {
+    public grpc.project.distributedSys.BlockAccessResponseMessage blockAccess(grpc.project.distributedSys.BlockAccessMessage request) {
       return blockingUnaryCall(
           getChannel(), getBlockAccessMethod(), getCallOptions(), request);
     }
@@ -251,8 +251,8 @@ public final class IncidentResponseGrpc {
      * Block Access (unary)
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage> blockAccess(
-        grpc.project.distributedSys.Service03Impl.BlockAccessMessage request) {
+    public com.google.common.util.concurrent.ListenableFuture<grpc.project.distributedSys.BlockAccessResponseMessage> blockAccess(
+        grpc.project.distributedSys.BlockAccessMessage request) {
       return futureUnaryCall(
           getChannel().newCall(getBlockAccessMethod(), getCallOptions()), request);
     }
@@ -279,8 +279,8 @@ public final class IncidentResponseGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_BLOCK_ACCESS:
-          serviceImpl.blockAccess((grpc.project.distributedSys.Service03Impl.BlockAccessMessage) request,
-              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service03Impl.BlockAccessResponseMessage>) responseObserver);
+          serviceImpl.blockAccess((grpc.project.distributedSys.BlockAccessMessage) request,
+              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.BlockAccessResponseMessage>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -294,7 +294,7 @@ public final class IncidentResponseGrpc {
       switch (methodId) {
         case METHODID_SUGGEST_INCIDENT_RESPONSE:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.suggestIncidentResponse(
-              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.Service03Impl.SuggestIncidentResponseMsg>) responseObserver);
+              (io.grpc.stub.StreamObserver<grpc.project.distributedSys.SuggestIncidentResponseMsg>) responseObserver);
         default:
           throw new AssertionError();
       }
